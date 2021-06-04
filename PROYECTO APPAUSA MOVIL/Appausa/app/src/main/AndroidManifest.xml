@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.appausa">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <dist:module dist:instant="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconoapp"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.appausa.main.PaginaCarga">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.Login"
+            android:theme="@style/Login"
+            android:label="Ingreso"></activity>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="Inicio"
+            ></activity>
+
+        <activity
+            android:name=".extra.SobreLaApp"
+            android:theme="@style/Login"
+            android:label="Sobre Appausa"
+            ></activity>
+
+        <activity
+            android:name=".extra.Documento"
+            android:theme="@style/Login"
+            android:label="Documento"
+            ></activity>
+
+        <activity
+            android:name=".actializaciones.CambiarContrasena"
+            android:label="Cambiar contraseña"
+            android:theme="@style/Login"></activity>
+
+        <activity
+            android:name=".actializaciones.CambiarContrasena2"
+            android:label="Cambiar contraseña"
+            android:theme="@style/Login">
+        </activity>
+    </application>
+
+</manifest>

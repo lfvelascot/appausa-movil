@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="Usuarios"
+        >
+        <menu
+            android:icon="@drawable/workers"
+            >
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/verusuarios"
+                    android:title="Ver Usuarios" />
+
+                <item
+                    android:id="@+id/modusuario"
+                    android:title="Modificar Datos Usuario" />
+
+                <item
+                    android:id="@+id/eliusuario"
+                    android:title="Eliminar Datos Usuario" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Reportes"
+        >
+        <menu
+            android:icon="@drawable/reportes"
+            >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/verReportes"
+                    android:title="Ver Reportes" />
+                <item
+                    android:id="@+id/EliminarReporte"
+                    android:title="Eliminar Reporte" />
+                <item
+                    android:id="@+id/ModReporte"
+                    android:title="Modificar Reporte" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Cuentas"
+
+        >
+        <menu
+            android:icon="@drawable/cuentas"
+            >
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/anadircuenta"
+                    android:title="Añadir Cuenta" />
+
+                <item
+                    android:id="@+id/vercuentas"
+                    android:title="Ver Cuentas" />
+
+                <item
+                    android:id="@+id/modcuenta"
+                    android:title="Modificar Cuenta" />
+
+                <item
+                    android:id="@+id/elicuenta"
+                    android:title="Eliminar Cuenta" />
+
+                <item
+                    android:id="@+id/cambiarestadocuenta"
+                    android:title="Cambiar Estado" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Comentarios">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/enviarComentario"
+                    android:title="Enviar comentario" />
+
+                <item
+                    android:id="@+id/verComentarios"
+                    android:title="Ver comentarios recibidos" />
+
+                <item
+                    android:id="@+id/modComentario"
+                    android:title="Modificar Comentario" />
+
+                <item
+                    android:id="@+id/eliComentario"
+                    android:title="Eliminar Comentario" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Ayuda y comentarios">
+        <menu
+            >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/verAyuda"
+                    android:title="Panel de ayuda" />
+
+                <item
+                    android:id="@+id/sobreAppausa"
+                    android:title="Sobre Appausa" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/logOut"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="Cerrar sesión" />
+
+
+</menu>

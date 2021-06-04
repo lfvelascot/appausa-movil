@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lenviarreporte"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/degradeb"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Revision de reporte"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Codigo:"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tcodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="145741"
+                android:textColor="#B61818"
+
+                />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha y hora de envio:"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tfecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12/03/2021 05:30PM" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID Empleado:"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/idempleado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Información adicional:"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tdescrip"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:text="Aqui ira la información adicional que brinde el empleado para entender la razon por la que no pudo asistir al trabajo.
+                 Aqui ira la información adicional que brinde el empleado para entender la razon por la que no pudo asistir al trabajo" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documento de soporte:"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/soporte"
+                android:layout_width="match_parent"
+                android:layout_height="292dp"
+                app:srcCompat="@drawable/fotosss"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione una opcion:"
+                android:textColor="@color/black"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgevaluacionr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_aceptado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptado" />
+
+                <RadioButton
+                    android:id="@+id/radio_negado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Negado" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/brevisarr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

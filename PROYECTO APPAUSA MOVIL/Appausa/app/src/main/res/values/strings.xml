@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Appausa</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="cambiar">Actualizar</string>
+    <string name="correo">Correo</string>
+    <string name="ingrese_el_correo_de_la_cuenta">Ingrese el correo de la cuenta:</string>
+    <string name="cambiar_contrase_a">Cambiar contraseña</string>
+    <string name="estado">Estado</string>
+    <string name="aceptado">Aceptado</string>
+    <string name="en_espera">En espera</string>
+    <string name="negado">Negado</string>
+    <string name="todo">TODO</string>
+</resources>

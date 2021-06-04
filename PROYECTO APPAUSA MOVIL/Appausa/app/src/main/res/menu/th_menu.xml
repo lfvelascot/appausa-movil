@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="Reportes">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/verReportesRec"
+                    android:icon="@drawable/ic_baseline_auto_awesome_motion_24"
+                    android:title="Ver reportes recibidos" />
+                <item
+                    android:id="@+id/enviarReporte"
+                    android:icon="@drawable/ic_baseline_send_24"
+                    android:title="Enviar reporte" />
+                <item
+                    android:id="@+id/verReportesEnv"
+                    android:icon="@drawable/ic_baseline_document_scanner_24"
+                    android:title="Ver reportes enviados" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Empleados">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/verempleados"
+                    android:icon="@drawable/workers"
+                    android:title="Ver empleados" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Ayuda y comentarios">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/verAyuda"
+                    android:icon="@drawable/ic_baseline_live_help_24"
+                    android:title="Panel de ayuda" />
+
+                <item
+                    android:id="@+id/sobreAppausa"
+                    android:icon="@drawable/ayuda"
+                    android:title="Sobre Appausa" />
+
+                <item
+                    android:id="@+id/enviarComentario"
+                    android:icon="@drawable/ic_baseline_comment_24"
+                    android:title="Enviar comentario" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/logOut"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="Cerrar sesión" />
+
+</menu>

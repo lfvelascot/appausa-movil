@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lenviarreporte"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/degradeb"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/idreportem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ingrese ID del reporte"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/buscarreporte1"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    android:text="Buscar" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos del reporte"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Codigo:"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tcodigo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#B61818"
+
+                />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha y hora de envio:"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tfecha1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID Empleado:"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/idempleado1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Información adicional:"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tdescrip1"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documento de soporte:"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/soporte"
+                android:layout_width="match_parent"
+                android:layout_height="292dp"
+                app:srcCompat="@drawable/fotosss"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado actual:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/testado1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione una opcion:"
+                android:textColor="@color/black"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgevaluacionr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radio_en_espera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="En espera" />
+
+                <RadioButton
+                    android:id="@+id/radio_aceptado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptado" />
+
+                <RadioButton
+                    android:id="@+id/radio_negado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Negado" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bmodificarreporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modificar" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

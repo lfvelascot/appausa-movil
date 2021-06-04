@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/estado"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/id_empleado"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:text="Nombre"
+        android:textAppearance="?attr/textAppearanceListItem"
+        tools:text="Alexander Pierrot" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_empleado"
+        android:layout_alignLeft="@+id/id_empleado"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="6dp"
+        android:text="Cargo"
+        tools:text="CEO" />
+
+    <TextView
+        android:id="@+id/id_reporte"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_empleado"
+        android:layout_alignLeft="@+id/id_empleado"
+        android:layout_marginLeft="179dp"
+        android:layout_marginTop="-23dp"
+        android:text="Cargo"
+        tools:text="CEO" />
+
+    <TextView
+        android:id="@+id/tipo_reporte"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fecha"
+        android:layout_alignLeft="@+id/id_empleado"
+        android:text="Compañía"
+        tools:text="Blue Insurances Ltd" />
+</RelativeLayout>

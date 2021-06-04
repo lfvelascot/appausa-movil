@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lenviarreporte"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/degradeb"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Datos del empleado"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:text="Documento:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/docempl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CC. 100.689.373"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/nomempl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Luis Felipe Velasco Tao"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de nacimiento:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/fechnac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="28/12/2000"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:text="Correo:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/correoemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="correo@email.com"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:text="Telefono:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/telemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3144432469"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="23dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Reportes"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <ListView
+                android:id="@+id/listreportes"
+                android:layout_width="match_parent"
+                android:layout_height="453dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
